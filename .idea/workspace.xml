@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a759facb-d649-48c8-a175-8faa61ae6b7b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/smtp_server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/smtp_server.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,13 +127,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579553499452</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="base64">
+      <created>1579634458918</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579634458918</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add read to file" />
     <MESSAGE value="add write to file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add write to file" />
+    <MESSAGE value="base64" />
+    <option name="LAST_COMMIT_MESSAGE" value="base64" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="72" key="#Inspections" timestamp="1579545837374">
@@ -151,41 +156,41 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="496" y="40" key="#server/0.0.1536.824@0.0.1536.824" timestamp="1579633265240" />
-    <state x="424" y="6" key="CommitChangelistDialog2" timestamp="1579553498992">
+    <state x="424" y="6" key="CommitChangelistDialog2" timestamp="1579634458195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1579553498992" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1579634354054">
+    <state x="424" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1579634458195" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1579635109784">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579634354054" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1579634354054">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579635109784" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1579635109784">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579634354054" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1579634354054">
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579635109784" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1579635109784">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579634354054" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1579634354054">
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579635109784" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1579635109784">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579634354054" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579635109784" />
     <state x="277" y="56" key="SettingsEditor" timestamp="1579631751176">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1579631751176" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1579553515933">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1579634473660">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1579553515933" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1579634473660" />
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1579631740636">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1579631740636" />
-    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579634443405">
+    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579635209281">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1579634443405" />
+    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1579635209281" />
   </component>
 </project>
