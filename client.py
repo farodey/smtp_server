@@ -10,7 +10,6 @@ msg = MIMEText('Добро пожаловать на UXCrowd!\n\n'
                'Изменить пароль можно в личном кабинете в разделе Профиль.\n\n'
                'На связи,\n\n'
                'Команда UXCrowd', 'plain', 'utf-8')
-
 msg['To'] = email.utils.formataddr(('Recipient', 'recipient@example.com'))
 msg['From'] = email.utils.formataddr(('Author', 'author@example.com'))
 msg['Subject'] = 'Simple test message'
