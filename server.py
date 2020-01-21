@@ -9,7 +9,12 @@ class CustomSMTPServer(smtpd.SMTPServer):
 
         login = re.search(r"Логин: (.*?@hostname.com)", data)
         password = re.search(r"Пароль: (\w{6})", data)
-        print(data)
+
+        # Декодирует русские символы из письма
+        a = data.find('Subject')
+        b = data.find('\n\n', a)
+        body = data[b + 2: len(data)]
+        print(base64.b64decode(body).decode())
 
         with open('db.txt', 'a') as file:
             file.write(" ".join([str(self.count)]))

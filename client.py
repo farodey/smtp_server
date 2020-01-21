@@ -3,7 +3,7 @@ import email.utils
 from email.mime.text import MIMEText
 
 # Create the message
-msg = MIMEText('asdasd', 'plain', 'utf-8')
+msg = MIMEText('Привет! Этот текст написан на русском языке.', 'plain', 'utf-8')
 msg['To'] = email.utils.formataddr(('Recipient', 'recipient@example.com'))
 msg['From'] = email.utils.formataddr(('Author', 'author@example.com'))
 msg['Subject'] = 'Simple test message'
