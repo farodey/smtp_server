@@ -1,15 +1,15 @@
+import asyncore
+import base64
+import re
 import smtpd
-import asyncore, re, base64
 
 
 class CustomSMTPServer(smtpd.SMTPServer):
     def process_message(self, peer, mailfrom, rcpttos, data, **kwargs):
 
         # Декодируем тело письма
-        a = data.find('Subject')
-        b = data.find('\n\n', a)
-        body = data[b + 2: len(data)]
-        body = base64.b64decode(body).decode()
+        bodyBytes = bytes(re.search(r"Subject: .*\n\n([\s\S]*)", data)[1], "utf-8")
+        body = base64.b64decode(bodyBytes).decode("utf-8")
 
         # Ищем логин/пароль
         login = re.search(r"Логин: (.*?@yopmail.com)", body).group(1)
@@ -17,9 +17,9 @@ class CustomSMTPServer(smtpd.SMTPServer):
 
         # Пишем логин/пароль в файл
         with open('db.txt', 'a') as file:
-            file.write(str(login))
+            file.write(login)
             file.write(':')
-            file.write(str(password))
+            file.write(password)
             file.write('\n')
 
 

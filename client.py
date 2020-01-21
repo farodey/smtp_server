@@ -2,7 +2,7 @@ import smtplib
 import email.utils
 from email.mime.text import MIMEText
 
-# Create the message
+# Тело письма
 msg = MIMEText('Добро пожаловать на UXCrowd!\n\n'
                'Ваши логин и пароль для входа в личный кабинет:\n\n'
                'Логин: ebilemmov-6678@yopmail.com\n\n'
@@ -10,6 +10,7 @@ msg = MIMEText('Добро пожаловать на UXCrowd!\n\n'
                'Изменить пароль можно в личном кабинете в разделе Профиль.\n\n'
                'На связи,\n\n'
                'Команда UXCrowd', 'plain', 'utf-8')
+
 msg['To'] = email.utils.formataddr(('Recipient', 'recipient@example.com'))
 msg['From'] = email.utils.formataddr(('Author', 'author@example.com'))
 msg['Subject'] = 'Simple test message'
